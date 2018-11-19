@@ -14,7 +14,7 @@ namespace Web.UI.Controllers
             var model = new TuplesViewModel
             {
                 TestString = tupleValue.TestString,
-                ListOfDogs = tupleValue.DogList().Where(x => x.Contains("German Shepherd")),
+                ListOfDogs = tupleValue.DogList(),
                 IsItTrue = tupleValue.ItsTrue
             };
             return View(model);
