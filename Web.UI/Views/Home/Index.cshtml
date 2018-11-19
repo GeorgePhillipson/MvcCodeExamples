@@ -1,0 +1,15 @@
+﻿@model Web.Model.TupleViewModel.TuplesViewModel
+@{
+                /**/
+
+                ViewBag.Title = "Home Page";
+}
+
+<p>@Model.TestString</p>
+<ul>
+    @foreach (var data in Model.ListOfDogs)
+    {
+        <li>@data</li>
+    }
+</ul>
+<p>It is @Model.IsItTrue</p>
