@@ -46,9 +46,19 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="NWebsec, Version=5.1.1.0, Culture=neutral, PublicKeyToken=3613da5f958908a1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NWebsec.5.1.1\lib\net45\NWebsec.dll</HintPath>
+    </Reference>
+    <Reference Include="NWebsec.Core, Version=2.1.0.0, Culture=neutral, PublicKeyToken=3613da5f958908a1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NWebsec.Core.2.1.0\lib\net45\NWebsec.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="NWebsec.Mvc, Version=5.1.1.0, Culture=neutral, PublicKeyToken=3613da5f958908a1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NWebsec.Mvc.5.1.1\lib\net45\NWebsec.Mvc.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -141,9 +151,14 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\CTImage.png" />
+    <Content Include="Images\protecting-your-privacy.jpg" />
     <Content Include="Images\SVG.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <None Include="NWebsecConfig\HttpHeaderSecurityModuleConfig.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -155,7 +170,9 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -196,6 +213,10 @@
     <ProjectReference Include="..\Web.Model\Web.Model.csproj">
       <Project>{4709a63a-edf2-4bff-8c47-0e79235f0090}</Project>
       <Name>Web.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Web.RequiresHttps\Web.RequiresHttps.csproj">
+      <Project>{ec961d42-2ca2-484d-bf24-e198f0875396}</Project>
+      <Name>Web.RequiresHttps</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web.Helper", "Web.Helper\We
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web.Model", "Web.Model\Web.Model.csproj", "{4709A63A-EDF2-4BFF-8C47-0E79235F0090}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web.RequiresHttps", "Web.RequiresHttps\Web.RequiresHttps.csproj", "{EC961D42-2CA2-484D-BF24-E198F0875396}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{4709A63A-EDF2-4BFF-8C47-0E79235F0090}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4709A63A-EDF2-4BFF-8C47-0E79235F0090}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4709A63A-EDF2-4BFF-8C47-0E79235F0090}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC961D42-2CA2-484D-BF24-E198F0875396}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC961D42-2CA2-484D-BF24-E198F0875396}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC961D42-2CA2-484D-BF24-E198F0875396}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC961D42-2CA2-484D-BF24-E198F0875396}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
