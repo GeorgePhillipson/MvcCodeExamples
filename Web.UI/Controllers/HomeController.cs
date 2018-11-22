@@ -19,5 +19,11 @@ namespace Web.UI.Controllers
             };
             return View(model);
         }
+
+        public ActionResult Svg()
+        {
+    
+            return View("~/Views/Home/SvgExample.cshtml");
+        }
     }
 }
