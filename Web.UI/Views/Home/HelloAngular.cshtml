@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewBag.Title = "HelloAngular";
+}
+
+
+@section Angular
+{
+    <base href="/src/main.js">
+    <script src="~/node_modules/core-js/client/shim.js"></script>
+    <script src="~/node_modules/zone.js/dist/zone.js"></script>
+    <script src="~/node_modules/systemjs/dist/system.src.js"></script>
+    <script src="~/src/systemjs.config.js"></script>
+    <script>
+        System.import('main.js').catch(function(err){ console.error(err); });
+    </script>
+}
+<my-app>Loading AppComponent content here ...</my-app>
+

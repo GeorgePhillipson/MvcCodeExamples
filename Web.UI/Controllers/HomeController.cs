@@ -25,5 +25,11 @@ namespace Web.UI.Controllers
     
             return View("~/Views/Home/SvgExample.cshtml");
         }
+
+        public ActionResult HelloAngular()
+        {
+
+            return View("~/Views/Home/HelloAngular.cshtml");
+        }
     }
 }
