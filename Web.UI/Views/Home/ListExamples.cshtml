@@ -1,0 +1,70 @@
+﻿@model Web.Model.ListViewModel.ExampleOfListViewModel
+@{
+    ViewBag.Title = "ListExamples";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h2>List Examples</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+            <p><strong>List of pets</strong></p>
+            <ul>
+                @foreach (var pet in Model.ListOfPets)
+                {
+                    <li>@pet.StringId <br/> @pet.StringValue <hr/></li>
+                }
+            </ul>
+        </div>
+        <div class="col-md-2">
+            <p><strong>List of Ints</strong></p>
+            <ul>
+                @foreach (var intValue in Model.ListOfInts)
+                {
+                    <li>@intValue</li>
+                }
+            </ul>
+        </div>
+        <div class="col-md-2">
+            <p><strong>List of ints joined</strong></p>
+            <ul>
+                @foreach (var intValue in Model.ListOfIntsJoined)
+                {
+                    <li>@intValue</li>
+                }
+            </ul>
+        </div>
+        <div class="col-md-2">
+            <p><strong>List of strings</strong></p>
+            <ul>
+                @foreach (var stringValue in Model.ListOfStrings)
+                {
+                    <li>@stringValue</li>
+                }
+            </ul>
+        </div>
+        <div class="col-md-2">
+            <p><strong>List of duplicate pets</strong></p>
+            <ul>
+                @foreach (var pet in Model.ListOfPetsDuplicates)
+                {
+                    <li>@pet</li>
+                }
+            </ul>
+        </div>
+        <div class="col-md-2">
+            <p><strong>List of ints sorted</strong></p>
+            <ul>
+                @foreach (var intsSorted in Model.ListOfIntsSorted)
+                {
+                    <li>@intsSorted</li>
+                }
+            </ul>
+        </div>
+    </div>
+</div>
+
+
