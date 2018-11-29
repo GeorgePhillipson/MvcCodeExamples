@@ -1,0 +1,26 @@
+﻿@{
+    ViewBag.Title = "Async Example";
+}
+
+<h2>Async Example</h2>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>Search Using jQuery Ajax Async</h1>
+            <form name="frmAsync" id="frmAsync">
+                <div class="form-group">
+                    <input class="form-control" type="text" name="param" id="param" placeholder="Enter keyword 'dog' or 'cat' or 'fish'" />
+                </div>
+            </form>
+            <div id="ajaxFindDetails"></div>
+        </div>
+    </div>
+</div>
+
+@section AsyncExample
+{
+
+    <script src="~/Scripts/CustomScripts/asyncExample.js"></script>
+}

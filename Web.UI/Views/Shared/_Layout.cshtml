@@ -26,6 +26,7 @@
                     <li>@Html.ActionLink("SVG", "Svg", "Home")</li>
                     <li>@Html.ActionLink("Hello Angular", "HelloAngular", "Home")</li>
                     <li>@Html.ActionLink("List Example", "Index", "ListExamples")</li>
+                    <li>@Html.ActionLink("Async Example", "Index", "AsyncExample")</li>
                 </ul>
             </div>
         </div>
@@ -41,6 +42,7 @@
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
-    @RenderSection("Angular",required:false)
+    @RenderSection("Angular", required: false)
+    @RenderSection("AsyncExample", required: false)
 </body>
 </html>
